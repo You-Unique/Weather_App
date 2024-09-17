@@ -11,6 +11,18 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
+  void initState() {
+    super.initState();
+
+    Future.delayed(const Duration(seconds: 5), () {
+      Navigator.of(context)
+          .pushReplacement(MaterialPageRoute(builder: (context) {
+        return const HomeScreen();
+      }));
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue[900],
@@ -36,32 +48,6 @@ class _SplashScreenState extends State<SplashScreen> {
                   fontWeight: FontWeight.w400,
                   fontSize: 50,
                   color: Colors.white),
-            ),
-            20.vSpace,
-            GestureDetector(
-              child: Container(
-                decoration: const BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.horizontal(
-                        left: Radius.circular(30), right: Radius.circular(30)),
-                    color: Colors.amberAccent),
-                height: 50,
-                width: 220,
-                child: Center(
-                    child: Text(
-                  'Get Started',
-                  style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 20,
-                      color: Colors.blue[900]),
-                )),
-              ),
-              onTap: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) {
-                  return const HomeScreen();
-                }));
-              },
             ),
           ],
         ),

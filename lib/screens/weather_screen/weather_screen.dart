@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -108,7 +110,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
           width: 330,
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,
-            color: Colors.lightBlue,
+            color: Colors.white.withAlpha(50),
             borderRadius: BorderRadius.circular(30),
           ),
           child: Padding(
@@ -325,6 +327,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
               20.vSpace,
               InputField(
                 textEditingController: _searchController,
+                Color: Colors.white,
                 label: 'Enter New City',
                 hint: 'Search',
                 onFieldSubmitted: () {

@@ -7,6 +7,7 @@ class InputField extends StatelessWidget {
   final Widget? suffixWidget;
   final Widget? prefixWidget;
   final bool obscure;
+  final Color;
   final Function()? onFieldSubmitted;
   const InputField({
     super.key,
@@ -15,6 +16,7 @@ class InputField extends StatelessWidget {
     this.suffixWidget,
     this.prefixWidget,
     this.hint,
+    this.Color,
     this.obscure = false,
     this.onFieldSubmitted,
   });
@@ -39,7 +41,7 @@ class InputField extends StatelessWidget {
         filled: true,
         prefixIcon: prefixWidget,
         suffixIcon: suffixWidget,
-        fillColor: const Color.fromRGBO(249, 250, 251, 1),
+        fillColor: Color,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: BorderSide.none,

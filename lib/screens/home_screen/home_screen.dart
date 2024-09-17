@@ -128,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
             width: 330,
             decoration: BoxDecoration(
                 shape: BoxShape.rectangle,
-                color: Colors.lightBlue,
+                color: Colors.white.withAlpha(50),
                 borderRadius: BorderRadius.circular(30)),
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 20),
@@ -303,7 +303,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                30.vSpace,
+                20.vSpace,
                 if (_weatherData != null)
                   _weatherData!['error'] != null
                       ? Text(_weatherData!['error'])
@@ -325,10 +325,10 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                             GestureDetector(
                               child: const Padding(
-                                padding: EdgeInsets.only(left: 200),
+                                padding: EdgeInsets.only(left: 220),
                                 child: Icon(
                                   Icons.search,
-                                  size: 30,
+                                  size: 35,
                                   color: Colors.white,
                                 ),
                               ),

@@ -23,7 +23,7 @@ class _SearchScreenViewModelState extends State<SearchScreenViewModel> {
                 shape: BoxShape.rectangle,
                 borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(25), bottom: Radius.circular(25)),
-                color: Colors.blue[500]),
+                color: Colors.white.withAlpha(80)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -61,7 +61,7 @@ class _SearchScreenViewModelState extends State<SearchScreenViewModel> {
                 shape: BoxShape.rectangle,
                 borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(25), bottom: Radius.circular(25)),
-                color: Colors.blue[500]),
+                color: Colors.white.withAlpha(80)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -99,7 +99,7 @@ class _SearchScreenViewModelState extends State<SearchScreenViewModel> {
                 shape: BoxShape.rectangle,
                 borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(25), bottom: Radius.circular(25)),
-                color: Colors.blue[500]),
+                color: Colors.white.withAlpha(80)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -137,7 +137,7 @@ class _SearchScreenViewModelState extends State<SearchScreenViewModel> {
                 shape: BoxShape.rectangle,
                 borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(25), bottom: Radius.circular(25)),
-                color: Colors.blue[500]),
+                color: Colors.white.withAlpha(80)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -175,7 +175,7 @@ class _SearchScreenViewModelState extends State<SearchScreenViewModel> {
                 shape: BoxShape.rectangle,
                 borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(25), bottom: Radius.circular(25)),
-                color: Colors.blue[500]),
+                color: Colors.white.withAlpha(80)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -213,7 +213,7 @@ class _SearchScreenViewModelState extends State<SearchScreenViewModel> {
                 shape: BoxShape.rectangle,
                 borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(25), bottom: Radius.circular(25)),
-                color: Colors.blue[500]),
+                color: Colors.white.withAlpha(80)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
